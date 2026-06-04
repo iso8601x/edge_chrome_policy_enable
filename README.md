@@ -12,3 +12,5 @@ Release compiled with VS2022:
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
 
 cl /nologo /LD /O2 /EHsc /W4 "c:\temp\mdmregistration.cpp" /link /DEF:"c:\temp\mdmregistration.def" /OUT:"c:\temp\mdmregistration.dll"
+
+OS edition detection (Home/Pro etc) is not possible - that's done entirely by the browser, so I think the only way to affect that would be by either patching the browser files themselves, or in-memory.
